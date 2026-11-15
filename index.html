@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff4f7">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="A winter planner in a pastel arcade after closing.">
+<title>Lost Plush Arcade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer="" src="app.js">
+</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="mast">
+<div class="wrap top">
+<a class="brand" href="#planner">
+<span class="brand-icon" aria-hidden="true">❄</span>
+<span>Lost Plush <i>Arcade</i>
+</span>
+</a>
+<nav aria-label="Rooms" class="rooms">
+  <a href="#planner" aria-current="page">Planner</a>
+<a href="#movies">Movies</a>
+<a href="#advent">Advent</a>
+<a href="#habits">Habits</a>
+<a href="#goals">Goals</a>
+<a class="settings-link" href="#settings" aria-label="Settings">
+<span aria-hidden="true">⚙</span>
+</a>
+</nav>
+</div>
+</header>
+<main class="wrap" id="content" tabindex="-1">
+  <noscript>Enable JavaScript to open Lost Plush Arcade.</noscript>
+</main>
+<aside class="dock" aria-label="Desk tools">
+  <section class="panel card" id="radio" aria-labelledby="radio-title" hidden>
+    <div class="row spread">
+<h2 id="radio-title">After Hours Radio</h2>
+<button data-tool="radio" aria-label="Close music">×</button>
+</div>
+    <p id="track">Food Court, 2:03 AM</p>
+<p id="track-detail" class="muted">Electric piano · warm bass and a soft drum pulse</p>
+<div class="row">
+<button id="play">Play</button>
+<button id="skip-track">Next track</button>
+<label>Volume <input id="volume" type="range" min="0" max="100" value="18">
+</label>
+</div>
+    <p id="audio-note" role="status">
+</p>
+  </section>
+  <section class="panel card" id="timer" aria-labelledby="timer-title" hidden="">
+    <div class="row spread">
+<h2 id="timer-title">15-minute timer</h2>
+<button data-tool="timer" aria-label="Close timer">×</button>
+</div>
+    <output id="clock">15:00</output>
+<p id="timer-note" role="status">
+</p>
+<div class="row">
+<button id="start">Start</button>
+<button id="reset">Reset</button>
+</div>
+  </section>
+  <section class="panel card" id="journal" aria-labelledby="journal-title" hidden="">
+    <div class="row spread">
+<h2 id="journal-title">Secret Journal</h2>
+<button data-tool="journal" aria-label="Close journal">×</button>
+</div>
+    <label class="row">Entry date <input type="date" id="entry-day" min="2026-11-14">
+</label>
+    <label for="entry">If today had a secret room, what was inside?</label>
+<textarea id="entry" rows="3" maxlength="12000" placeholder="A tiny thought or a whole story…">
+</textarea>
+    <div class="row" id="moods" aria-label="Mood stickers">
+<button data-action="mood" data-value="😊" aria-label="Happy" aria-pressed="false">😊</button>
+<button data-action="mood" data-value="☁️" aria-label="Quiet" aria-pressed="false">☁️</button>
+<button data-action="mood" data-value="😴" aria-label="Sleepy" aria-pressed="false">😴</button>
+<button data-action="mood" data-value="🌧️" aria-label="Sad" aria-pressed="false">🌧️</button>
+<button data-action="mood" data-value="🫤" aria-label="Mixed up" aria-pressed="false">🫤</button>
+<button data-action="mood" data-value="✨" aria-label="Excited" aria-pressed="false">✨</button>
+</div>
+<p class="muted" id="entry-note" role="status">
+</p>
+  </section>
+  <div class="bar">
+<button data-tool="radio" aria-controls="radio" aria-expanded="false">♫ Music</button>
+<button data-tool="timer" aria-controls="timer" aria-expanded="false">⏱ <span id="timer-label">15:00</span>
+</button>
+<button data-tool="journal" aria-controls="journal" aria-expanded="false">♡ Journal</button>
+</div>
+</aside>
+<div id="notice" role="status" aria-live="polite">
+</div>
+</body>
+</html>
